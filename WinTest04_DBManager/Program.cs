@@ -16,7 +16,7 @@ namespace WinTest04_DBManager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmDBMan());
         }
     }
 }
