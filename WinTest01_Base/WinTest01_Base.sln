@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinTest03_Com", "..\WinTest
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinTest04_DBManager", "..\WinTest04_DBManager\WinTest04_DBManager.csproj", "{B7E491B1-D97B-4AE0-AAE0-C6CAE01C3C8F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinTest05_Paint", "..\WinTest05_Paint\WinTest05_Paint.csproj", "{4B83909B-E9FE-4698-89FB-D5C47747B8B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProject", "..\MiniProject\MiniProject.csproj", "{9534243E-647F-4A48-9D37-9AE92150F66D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{B7E491B1-D97B-4AE0-AAE0-C6CAE01C3C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7E491B1-D97B-4AE0-AAE0-C6CAE01C3C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7E491B1-D97B-4AE0-AAE0-C6CAE01C3C8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B83909B-E9FE-4698-89FB-D5C47747B8B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B83909B-E9FE-4698-89FB-D5C47747B8B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B83909B-E9FE-4698-89FB-D5C47747B8B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B83909B-E9FE-4698-89FB-D5C47747B8B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9534243E-647F-4A48-9D37-9AE92150F66D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9534243E-647F-4A48-9D37-9AE92150F66D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9534243E-647F-4A48-9D37-9AE92150F66D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9534243E-647F-4A48-9D37-9AE92150F66D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -134,5 +134,10 @@ namespace WinTest04_DBManager
         {
             ViewSql(RunSql(textBox1.SelectedText));
         }
+
+        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            sqlConn.Close();
+        }
     }
 }

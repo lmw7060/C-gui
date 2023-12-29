@@ -19,5 +19,10 @@ namespace WinTest03_Com
             string[] sarr = System.IO.Ports.SerialPort.GetPortNames();
             for (int i = 0;i<sarr.Length;i++) cbCom.Items.Add(sarr[i]);
         }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

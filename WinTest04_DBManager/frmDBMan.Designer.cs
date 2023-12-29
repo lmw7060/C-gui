@@ -31,44 +31,45 @@
             this.components = new System.ComponentModel.Container();
             this.DataView = new System.Windows.Forms.TabControl();
             this.ViewTable = new System.Windows.Forms.TabPage();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.PopUp1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.mnuRunSql = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataView1 = new System.Windows.Forms.DataGridView();
             this.config = new System.Windows.Forms.TabPage();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.statusBar = new System.Windows.Forms.StatusStrip();
             this.mnuFile = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnu편집 = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnu보기 = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuNew = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuOpen = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuSave = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnu편집 = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuFind = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuReplace = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnu보기 = new System.Windows.Forms.ToolStripMenuItem();
             this.mnu도움말 = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuAbout = new System.Windows.Forms.ToolStripMenuItem();
-            this.dataView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.mnuReplace = new System.Windows.Forms.ToolStripMenuItem();
-            this.sbLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.sbLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.sbLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.testSqlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.PopUp1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.mnuRunSql = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusBar = new System.Windows.Forms.StatusStrip();
+            this.sbLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.sbLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.sbLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DataView.SuspendLayout();
             this.ViewTable.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
-            this.statusBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.PopUp1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataView1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
+            this.statusBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // DataView
@@ -93,6 +94,63 @@
             this.ViewTable.Text = "[Table Name]";
             this.ViewTable.UseVisualStyleBackColor = true;
             this.ViewTable.UseWaitCursor = true;
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(3, 3);
+            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.textBox1);
+            this.splitContainer1.Panel1.UseWaitCursor = true;
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.dataView1);
+            this.splitContainer1.Panel2.UseWaitCursor = true;
+            this.splitContainer1.Size = new System.Drawing.Size(786, 394);
+            this.splitContainer1.SplitterDistance = 124;
+            this.splitContainer1.TabIndex = 2;
+            this.splitContainer1.UseWaitCursor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.ContextMenuStrip = this.PopUp1;
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox1.Location = new System.Drawing.Point(0, 0);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(786, 124);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.UseWaitCursor = true;
+            // 
+            // PopUp1
+            // 
+            this.PopUp1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuRunSql});
+            this.PopUp1.Name = "PopUp1";
+            this.PopUp1.Size = new System.Drawing.Size(125, 26);
+            // 
+            // mnuRunSql
+            // 
+            this.mnuRunSql.Name = "mnuRunSql";
+            this.mnuRunSql.Size = new System.Drawing.Size(124, 22);
+            this.mnuRunSql.Text = "SQL 실행";
+            this.mnuRunSql.Click += new System.EventHandler(this.mnuRunSql_Click);
+            // 
+            // dataView1
+            // 
+            this.dataView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataView1.Location = new System.Drawing.Point(0, 0);
+            this.dataView1.Name = "dataView1";
+            this.dataView1.RowTemplate.Height = 23;
+            this.dataView1.Size = new System.Drawing.Size(786, 266);
+            this.dataView1.TabIndex = 0;
+            this.dataView1.UseWaitCursor = true;
             // 
             // config
             // 
@@ -119,18 +177,6 @@
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // statusBar
-            // 
-            this.statusBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sbLabel1,
-            this.sbLabel2,
-            this.sbLabel3});
-            this.statusBar.Location = new System.Drawing.Point(0, 555);
-            this.statusBar.Name = "statusBar";
-            this.statusBar.Size = new System.Drawing.Size(840, 22);
-            this.statusBar.TabIndex = 2;
-            this.statusBar.Text = "statusStrip1";
-            // 
             // mnuFile
             // 
             this.mnuFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -143,6 +189,36 @@
             this.mnuFile.Size = new System.Drawing.Size(43, 20);
             this.mnuFile.Text = "파일";
             // 
+            // mnuNew
+            // 
+            this.mnuNew.Name = "mnuNew";
+            this.mnuNew.Size = new System.Drawing.Size(114, 22);
+            this.mnuNew.Text = "New";
+            // 
+            // mnuOpen
+            // 
+            this.mnuOpen.Name = "mnuOpen";
+            this.mnuOpen.Size = new System.Drawing.Size(114, 22);
+            this.mnuOpen.Text = "Open";
+            this.mnuOpen.Click += new System.EventHandler(this.mnuOpen_Click);
+            // 
+            // mnuSave
+            // 
+            this.mnuSave.Name = "mnuSave";
+            this.mnuSave.Size = new System.Drawing.Size(114, 22);
+            this.mnuSave.Text = "Save as";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(111, 6);
+            // 
+            // mnuExit
+            // 
+            this.mnuExit.Name = "mnuExit";
+            this.mnuExit.Size = new System.Drawing.Size(114, 22);
+            this.mnuExit.Text = "Exit";
+            // 
             // mnu편집
             // 
             this.mnu편집.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -152,47 +228,23 @@
             this.mnu편집.Size = new System.Drawing.Size(43, 20);
             this.mnu편집.Text = "편집";
             // 
+            // mnuFind
+            // 
+            this.mnuFind.Name = "mnuFind";
+            this.mnuFind.Size = new System.Drawing.Size(110, 22);
+            this.mnuFind.Text = "찾기";
+            // 
+            // mnuReplace
+            // 
+            this.mnuReplace.Name = "mnuReplace";
+            this.mnuReplace.Size = new System.Drawing.Size(110, 22);
+            this.mnuReplace.Text = "바꾸기";
+            // 
             // mnu보기
             // 
             this.mnu보기.Name = "mnu보기";
             this.mnu보기.Size = new System.Drawing.Size(43, 20);
             this.mnu보기.Text = "보기";
-            // 
-            // mnuNew
-            // 
-            this.mnuNew.Name = "mnuNew";
-            this.mnuNew.Size = new System.Drawing.Size(180, 22);
-            this.mnuNew.Text = "New";
-            // 
-            // mnuOpen
-            // 
-            this.mnuOpen.Name = "mnuOpen";
-            this.mnuOpen.Size = new System.Drawing.Size(180, 22);
-            this.mnuOpen.Text = "Open";
-            this.mnuOpen.Click += new System.EventHandler(this.mnuOpen_Click);
-            // 
-            // mnuSave
-            // 
-            this.mnuSave.Name = "mnuSave";
-            this.mnuSave.Size = new System.Drawing.Size(180, 22);
-            this.mnuSave.Text = "Save as";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
-            // 
-            // mnuExit
-            // 
-            this.mnuExit.Name = "mnuExit";
-            this.mnuExit.Size = new System.Drawing.Size(180, 22);
-            this.mnuExit.Text = "Exit";
-            // 
-            // mnuFind
-            // 
-            this.mnuFind.Name = "mnuFind";
-            this.mnuFind.Size = new System.Drawing.Size(180, 22);
-            this.mnuFind.Text = "찾기";
             // 
             // mnu도움말
             // 
@@ -208,79 +260,13 @@
             this.mnuAbout.Size = new System.Drawing.Size(187, 22);
             this.mnuAbout.Text = "About DB Manager...";
             // 
-            // dataView1
-            // 
-            this.dataView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataView1.Location = new System.Drawing.Point(0, 0);
-            this.dataView1.Name = "dataView1";
-            this.dataView1.RowTemplate.Height = 23;
-            this.dataView1.Size = new System.Drawing.Size(786, 266);
-            this.dataView1.TabIndex = 0;
-            // 
-            // textBox1
-            // 
-            this.textBox1.ContextMenuStrip = this.PopUp1;
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(0, 0);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(786, 124);
-            this.textBox1.TabIndex = 1;
-            // 
-            // splitContainer1
-            // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(3, 3);
-            this.splitContainer1.Name = "splitContainer1";
-            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer1.Panel1
-            // 
-            this.splitContainer1.Panel1.Controls.Add(this.textBox1);
-            // 
-            // splitContainer1.Panel2
-            // 
-            this.splitContainer1.Panel2.Controls.Add(this.dataView1);
-            this.splitContainer1.Size = new System.Drawing.Size(786, 394);
-            this.splitContainer1.SplitterDistance = 124;
-            this.splitContainer1.TabIndex = 2;
-            // 
-            // mnuReplace
-            // 
-            this.mnuReplace.Name = "mnuReplace";
-            this.mnuReplace.Size = new System.Drawing.Size(180, 22);
-            this.mnuReplace.Text = "바꾸기";
-            // 
-            // sbLabel1
-            // 
-            this.sbLabel1.Name = "sbLabel1";
-            this.sbLabel1.Size = new System.Drawing.Size(10, 17);
-            this.sbLabel1.Text = ".";
-            // 
-            // sbLabel2
-            // 
-            this.sbLabel2.Name = "sbLabel2";
-            this.sbLabel2.Size = new System.Drawing.Size(10, 17);
-            this.sbLabel2.Text = ".";
-            // 
-            // sbLabel3
-            // 
-            this.sbLabel3.Name = "sbLabel3";
-            this.sbLabel3.Size = new System.Drawing.Size(10, 17);
-            this.sbLabel3.Text = ".";
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.ValidateNames = false;
-            // 
             // testSqlToolStripMenuItem
             // 
             this.testSqlToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem2,
             this.toolStripMenuItem3,
-            this.toolStripMenuItem4});
+            this.toolStripMenuItem4,
+            this.closeToolStripMenuItem});
             this.testSqlToolStripMenuItem.Name = "testSqlToolStripMenuItem";
             this.testSqlToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.testSqlToolStripMenuItem.Text = "Test sql";
@@ -306,19 +292,47 @@
             this.toolStripMenuItem4.Text = "3";
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
-            // PopUp1
+            // statusBar
             // 
-            this.PopUp1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuRunSql});
-            this.PopUp1.Name = "PopUp1";
-            this.PopUp1.Size = new System.Drawing.Size(125, 26);
+            this.statusBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sbLabel1,
+            this.sbLabel2,
+            this.sbLabel3});
+            this.statusBar.Location = new System.Drawing.Point(0, 555);
+            this.statusBar.Name = "statusBar";
+            this.statusBar.Size = new System.Drawing.Size(840, 22);
+            this.statusBar.TabIndex = 2;
+            this.statusBar.Text = "statusStrip1";
             // 
-            // mnuRunSql
+            // sbLabel1
             // 
-            this.mnuRunSql.Name = "mnuRunSql";
-            this.mnuRunSql.Size = new System.Drawing.Size(180, 22);
-            this.mnuRunSql.Text = "SQL 실행";
-            this.mnuRunSql.Click += new System.EventHandler(this.mnuRunSql_Click);
+            this.sbLabel1.Name = "sbLabel1";
+            this.sbLabel1.Size = new System.Drawing.Size(10, 17);
+            this.sbLabel1.Text = ".";
+            // 
+            // sbLabel2
+            // 
+            this.sbLabel2.Name = "sbLabel2";
+            this.sbLabel2.Size = new System.Drawing.Size(10, 17);
+            this.sbLabel2.Text = ".";
+            // 
+            // sbLabel3
+            // 
+            this.sbLabel3.Name = "sbLabel3";
+            this.sbLabel3.Size = new System.Drawing.Size(10, 17);
+            this.sbLabel3.Text = ".";
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.ValidateNames = false;
+            // 
+            // closeToolStripMenuItem
+            // 
+            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.closeToolStripMenuItem.Text = "close";
+            this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
             // frmDBMan
             // 
@@ -334,17 +348,17 @@
             this.Text = "Database Manager ver 1.3";
             this.DataView.ResumeLayout(false);
             this.ViewTable.ResumeLayout(false);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.statusBar.ResumeLayout(false);
-            this.statusBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataView1)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.PopUp1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataView1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.statusBar.ResumeLayout(false);
+            this.statusBar.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -382,6 +396,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
         private System.Windows.Forms.ContextMenuStrip PopUp1;
         private System.Windows.Forms.ToolStripMenuItem mnuRunSql;
+        private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
     }
 }
 
